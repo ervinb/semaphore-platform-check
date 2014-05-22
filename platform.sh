@@ -12,6 +12,7 @@ echo `psql --version`
 echo `redis-cli INFO | grep redis_version`
 
 echo "\n** Ruby versions:"
+echo `rbenv global 2.1.2 && ruby --version`
 echo `rbenv global 2.1 && ruby --version`
 echo `rbenv global 2.1.1 && ruby --version`
 echo `rbenv global 2.1.0 && ruby --version`
@@ -35,3 +36,9 @@ echo `lein --version`
 
 echo "\n** PhantomJs version:"
 echo `phantomjs --version`
+
+echo "\n** PHP versions:"
+echo `php -v`
+echo `sudo phpbrew use 5.3 && php -v`
+echo `sudo phpbrew use 5.4 && php -v`
+echo `sudo phpbrew use 5.5 && php -v`
